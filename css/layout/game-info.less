@@ -1,0 +1,85 @@
+.game__info {
+	display: grid;
+	grid-template-columns: 199px 148px 165px;
+	grid-template-rows: 80px 168px 55px;
+	grid-template-areas: 'img title circle' 'img description description' 'stars price button';
+	.game__img {
+		grid-area: img;
+	}
+	.game__stars {
+		grid-area: stars;
+		width: 176px;
+		display: flex;
+		justify-content: center;
+		margin-top: 7px;
+		a {
+			letter-spacing: 7px;
+		}
+	}
+	.game__title {
+		color: white;
+		align-self: end;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 71px;
+		.game__title--main {
+			font-weight: 500;
+			grid-area: title;
+			font-size: 32px;
+		}
+		.game__title--under {
+			font-size: 14px;
+			font-weight: 500;
+		}
+		.game__title--under {
+
+		}
+	}
+	.game__description {
+		height: 124px;
+		grid-area: description;
+		grid-area: description;
+		align-self: center;
+		font-size: 15px;
+		color: #b7bacd;
+		line-height: 22px;
+		opacity: 0.9;
+	}
+	.progressbar {
+		justify-self: end;
+	}
+	.circle {
+		grid-area: circle;
+	}
+	.price {
+		grid-area: price;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.price__discount {
+			color: #fedd3f;
+			font-size: 14px;
+		}
+		.price__cost {
+			color: white;
+			font-size: 33px;
+		}
+	}
+	.button__buy {
+		grid-area: button;
+		background-color: #13e28d;
+		border: none;
+		outline: none;
+		border-radius: 4px;
+		color: white;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 1px;
+		font-size: 15px;
+		cursor: pointer;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}

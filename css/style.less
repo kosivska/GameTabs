@@ -1,0 +1,67 @@
+@import 'base/reset.css';
+@import 'utils/mixins.less';
+@import 'layout/byu-tab.less';
+@import 'layout/game-menu.less';
+@import 'layout/game-info.less';
+@import 'layout/ratings-tab.less';
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/*End Fonts*/
+
+.main-page {
+	background: url(../img/bg.jpg) 50% 50%/cover no-repeat;
+	background-size: cover;
+	padding: 144px 0;
+	height: 100vh;
+}
+
+.game {
+	background: #212534;
+	font-family: 'Lato', sans-serif;
+	margin: 0 auto;
+	width: 596px;
+	height: 540px;
+}
+
+.circle {
+	width: 60px;
+	height: 60px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 62px;
+	border: 5px solid #b7bacd;
+	border-radius: 100%;
+	margin: 0;
+	display: inline-block;
+	transform: rotate(-45deg);
+	p {
+		margin: 0;
+		transform: rotate(45deg);
+	}
+	
+	&.progressbar {
+		color: #b7bacd;
+		border-right-color: #18E585;
+		border-bottom-color: #18E585;
+		border-left-color: #18E585;
+	}
+}
+.game{
+	.game__menu {
+		.active {
+			border-bottom: 2px solid white;
+			opacity: 1;
+			padding: 28px 0 26px 0;
+		}
+	}
+}
+.field {
+	height: 301px;
+	padding: 58px 42px 64px 43px;
+}
+.tab__info {
+	display: flex;
+	justify-content: center;
+	color: white;
+}

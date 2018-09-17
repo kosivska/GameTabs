@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>GameTabs</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fontawesome-stars.css">
+</head>
+
+<body class="main-page">
+	<section class="game">
+		<div class="game__menu">
+			<div class="tab information__tab tabs__icon--flex">
+				<div class="tab__icon information__icon"></div> 
+				<h2 class="tabs__title">information</h2> 
+			</div>
+			<div class="tab ratings__tab tabs__icon--flex">
+				<div class="tab__icon ratings__icon"></div> 
+				<h2 class="tabs__title">ratings info</h2>
+			</div>
+			<div class="tab game__tab tabs__icon--flex">
+				<div class="tab__icon buy__icon"></div> 
+				<h2 class="tabs__title">where to buy</h2>
+			</div>
+		</div>
+		<div class="tabContent">
+			<div class="game__info field">
+				<div class="game__img">
+					<img src="img/farcry4.jpg">
+				</div>
+				<div class="game__stars">
+					<select id="example-fontawesome">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+				<div class="game__title">
+					<h1 class="game__title--main">FarCry 4</h1>
+					<h2 class="game__title--under">First Released Nov 17, 2014</h2>
+				</div>
+				<p class="game__description">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling under the regime of a despotic self-appointed king.</p>
+				<div class="circle progressbar"><p>7.8</p></div>
+				<div class="price">
+					<p class="price__discount">20% OFF!</p>
+					<p class="price__cost">$59.96</p>
+				</div>
+				<button class="button__buy">buy it now</button>
+			</div>
+		</div>
+		<div class="tabContent ratings field">
+			<p class="tab__info">Coming Soon...</p>
+		</div>
+		<div class="tabContent buy field">
+			<p class="tab__info">Coming Soon...</p>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="js/jquery.barrating.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
